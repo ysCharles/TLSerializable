@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-  				好用的 json model 互转工具
-                   DESC
+  # s.description  = <<-DESC
+  # 				好用的 json model 互转工具
+  #                  DESC
 
   s.homepage     = "https://github.com/ysCharles/TLSerializable"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/ysCharles/TLSerializable.git", :tag => "#{s.version.to_s}" }
 
-  s.ios.deployment_target = '8.0'
+  s.platform     = :ios, "8.0"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TLSerializable/Sources/*.swift"
+  s.source_files  = "Sources/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -136,5 +136,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.swift_version = '4.0'
 
 end
