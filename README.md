@@ -1,6 +1,6 @@
 # TLSerializable
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/liufengting/FTImageViewer/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ysCharles/TLSerializable/master/LICENSE)
 [![Pods Versions](https://img.shields.io/cocoapods/v/TLSerializable.svg?style=flat)](http://cocoapods.org/pods/TLSerializable)
 [![CI Status](http://img.shields.io/travis/ysCharles/TLSerializable.svg?style=flat)](https://travis-ci.org/ysCharles/TLSerializable)
 [![Swift Version Compatibility](https://img.shields.io/badge/swift4-compatible-4BC51D.svg?style=flat-square)](https://developer.apple.com/swift)
