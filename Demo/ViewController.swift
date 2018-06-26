@@ -9,6 +9,12 @@
 import UIKit
 import TLSerializable
 
+struct Cat {
+    let name : String
+    let age : Int
+    let list : [String]
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,6 +22,13 @@ class ViewController: UIViewController {
         test1()
         test2()
         test3()
+        
+        let kitten = Cat(name: "kitten", age: 2, list : ["篮球","排球","乒乓球"])
+        let mirror = Mirror(reflecting: kitten)
+        for child in mirror.children {
+            print("\(child.label!) - \(child.value)")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +88,8 @@ struct Test1: TLSerializable {
     lazy var name: Double? = { return (Double(test ?? "0.00") ?? 0.00) * 100 }()
     /// 测试文字
     var test:String?
+    
+    var jsonStr : String?
 }
 struct Test2: TLSerializable {
     lazy var name: String? = { return "我是test_name转换之后的\(test_name ?? "")" }()
@@ -90,7 +105,7 @@ struct Detial: TLSerializable {
 
 // json字符串一键转模型
 func test1(){
-    let jsonString = "{\"status\":1000,\"message\":\"操作成功\",\"data\":{\"test\":\"0.05\"}}"
+    let jsonString = "{\"status\":1000,\"message\":\"操作成功\",\"data\":{\"test\":\"0.05\",\"jsonStr\":\"{\\\"orderid\\\":1000,\\\"ordername\\\":\\\"hello kity\\\"}\"}}"
     //    let model = jsonString.jsonStringMapModel(ModelObjetT<Test1>.self)
     var model = ModelObjetT<Test1>.deserialize(from: jsonString)
     print(model?.data?.test ?? "test无值")
