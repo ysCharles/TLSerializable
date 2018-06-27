@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TLSerializable"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "基于 Swift4 Codable 的 json 序列化和反序列化工具"
 
   # This description is used to generate tags and improve search results.
