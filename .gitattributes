@@ -1,3 +1,4 @@
 *.md linguist-language=swift
 *.swift linguist-language=swift
 *.plist linguist-language=swift
+*.podspec linguist-language=swift
