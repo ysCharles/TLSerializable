@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TLSerializable"
-  s.version      = "0.3"
+  s.version      = "0.4"
   s.summary      = "基于 Swift4 Codable 的 json 序列化和反序列化工具"
 
   # This description is used to generate tags and improve search results.
@@ -136,6 +136,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.swift_version = '4.1'
+  s.swift_version = '4.2'
 
 end
