@@ -1,0 +1,5 @@
+language: Swift
+osx_image: xcode10
+xcode_project: TLSerializable.xcodeproj
+script: xcodebuild -project TLSerializable.xcodeproj -scheme "TLSerializable" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=latest'
+
