@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  Demo
 //
-//  Created by Charles on 2018/5/18.
-//  Copyright © 2018 Charles. All rights reserved.
+//  Created by Charles on 2021/11/15.
 //
 
 import UIKit
@@ -134,5 +133,3 @@ func test3() {
     let model = ModelArrayT<Pet>.deserialize(from: jsonString)
     print(model)
 }
-
-
